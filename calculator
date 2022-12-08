@@ -1,0 +1,21 @@
+from colorama import init
+from colorama import Fore, Back, Style
+init()
+
+print(Fore.RED)
+
+a = float(input("перше число: "))
+b = float(input("друге число: "))
+
+operation = input("1 = додавання \n2 = віднімання\n3 = множення\n4 = діленння ")
+result = 0
+if operation == "1":
+    result = a + b
+elif operation == "2":
+    result = a * b
+elif operation == "4":
+    if b == 0:
+        print("you doyn")
+    result = a / b
+
+print(result)
